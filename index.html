@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- ========== viewport settings ========= -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- =========== icons's link (boxicons) ============== -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!-- ======== icon's links (font awsome) ========= -->
+    <script
+      src="https://kit.fontawesome.com/a38cde193c.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- =========== font link  =========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fasthand&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ======== swiper links  ========= -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+
+    <!-- ======== css links ========== -->
+    <link rel="shortcut icon" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <title>ecoles du monde</title>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-bar">
+        <i class="bx bx-menu sidebarOpen"></i>
+        <span class="navLogo">
+          <a href="#">
+            <img class="navimg" src="img/logo.png" alt="" />
+          </a>
+        </span>
+
+        <div class="menu">
+          <div class="logo-toggle">
+            <span class="logo"
+              ><a href="#"
+                ><img
+                  class="s-a-k-img"
+                  src="svg gis/undraw_design_components_9vy6.svg"
+                  alt="" /></a
+            ></span>
+            <i class="bx bx-x siderbarClose"></i>
+          </div>
+
+          <ul class="nav-links">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#teachers">techers</a></li>
+            <li><a href="#offres">Offres</a></li>
+            <li>
+              <a href="login/login.html" id="login"
+                ><span class="login">login</span></a
+              >
+            </li>
+          </ul>
+        </div>
+
+         <div class="searchBox">
+          <div class="searchBox">
+            <div class="searchToggle">
+              <i class="bx bx-x cancel"></i>
+              <i class="bx bx-search search"></i>
+            </div>
+<!-- -->
+            <div class="search-field">
+              <input type="text" placeholder="Search..." />
+              <i class="bx bx-search"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- ======= header section ======= -->
+    <header id="header">
+      <div class="container">
+        <div class="arrow l" onclick="prev()">
+          <i
+            class="fa-solid fa-angle-left"
+            style="color: #f2f2f2; font-size: 50px; margin-left: 20px"
+          ></i>
+        </div>
+        <div class="slide slide-1">
+          <div class="caption"></div>
+        </div>
+        <div class="slide slide-2">
+          <div class="caption"></div>
+        </div>
+        <div class="slide slide-3">
+          <div class="caption"></div>
+        </div>
+        <div class="arrow r" onclick="next()">
+          <i
+            class="fa-solid fa-angle-right"
+            style="color: #f2f2f2; font-size: 50px; margin-right: 20px"
+          ></i>
+        </div>
+      
+        <div class="container2">
+          <h1>Vole </h1>
+          <form id="booking-form">
+            <div class="form-group">
+              <label class="label" for="departure-date">Select Departure Date</label>
+              <input type="date" id="departure-date" name="departure-date" required>
+          </div>
+          <div class="form-group">
+              <label class="label" for="departure-time">Select Departure Time</label>
+              <input type="time" id="departure-time" name="departure-time" required>
+          </div> 
+          <div class="form-group">
+            <label class="label" for="departure-place">Select Departure Date</label>
+            <input type="date" id="departure-place" name="departure-date" required>
+        </div>
+        <div class="form-group">
+            <label class="label" for="arrival-time">Select Departure Time</label>
+            <input type="time" id="arrivall-time" name="departure-time" required>
+        </div>
+  
+              <button type="submit">Book Now</button>
+          </form>
+          <div id="success-message" class="hidden">Thank you! Your booking has been confirmed.</div>
+      </div>
+         </div>
+    </header>
+    <!-- ======= about section ========= -->
+    <section class="about-container" id="about">
+      <div class="about">
+        <img src="img/flag logo.jpg" alt="" class="about-img" />
+        <div class="about-info">
+          <h3>en savoir plus sur nous</h3>
+          <h1>école de formation!</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam,
+            iusto ea. Tenetur, molestiae deleniti ad rem repudiandae eos velit
+            eligendi ducimus unde vero. Perspiciatis aperiam ducimus neque est
+            ratione quibusdam!
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ======= teacher section ======= -->
+    <section class="teachers-container" id="teachers">
+      <div class="techears">
+        <div class="teachers-info">
+          <h3>nos enseignants</h3>
+          <h1>nos enseignants</h1>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <!-- =============== SWIPER GALLERY CARDS =============== -->
+        <div class="swiper gallery-cards">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <a
+                href="teacher-profile/teacher-profile.html"
+                title="techer's name"
+              >
+                <article class="gallery__card">
+                  <img
+                    src="assets/img/team-1.jpg"
+                    alt="image gallery"
+                    class="gallery__img"
+                  />
+                  <div class="gallery__data">
+                    <h3 class="gallery__title">Teacher name</h3>
+                    <span class="gallery__subtitle">subject</span>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="teacher-profile/teacher-profile.html"
+                title="techer's name"
+              >
+                <article class="gallery__card">
+                  <img
+                    src="assets/img/team-2.jpg"
+                    alt="image gallery"
+                    class="gallery__img"
+                  />
+                  <div class="gallery__data">
+                    <h3 class="gallery__title">Teacher name</h3>
+                    <span class="gallery__subtitle">subject</span>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="teacher-profile/teacher-profile.html"
+                title="techer's name"
+              >
+                <article class="gallery__card">
+                  <img
+                    src="assets/img/team-3.jpg"
+                    alt="image gallery"
+                    class="gallery__img"
+                  />
+                  <div class="gallery__data">
+                    <h3 class="gallery__title">Teacher name</h3>
+                    <span class="gallery__subtitle">subject</span>
+                  </div>
+                </article>
+              </a>
+            </div>
+
+            <div class="swiper-slide">
+              <a
+                href="teacher-profile/teacher-profile.html"
+                title="techer's name"
+              >
+                <article class="gallery__card">
+                  <img
+                    src="assets/img/team-4.jpg"
+                    alt="image gallery"
+                    class="gallery__img"
+                  />
+                  <div class="gallery__data">
+                    <h3 class="gallery__title">Teacher name</h3>
+                    <span class="gallery__subtitle">subject</span>
+                  </div>
+                </article>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- =============== SWIPER GALLERY THUMBNAIL =============== -->
+        <div class="gallery__overflow">
+          <div class="swiper gallery-thumbs">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="assets/img/team-1.jpg"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="assets/img/team-2.jpg"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="assets/img/team-3.jpg"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+
+              <div class="swiper-slide">
+                <div class="gallery__thumbnail">
+                  <img
+                    src="assets/img/team-4.jpg"
+                    alt="image thumbnail"
+                    class="gallery__thumbnail-img"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <!-- Swiper pagination -->
+            <div class="swiper-pagination"></div>
+          </div>
+
+          <!-- Swiper arrows -->
+          <div class="swiper-button-next">
+            <i class="ri-arrow-right-line"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="ri-arrow-left-line"></i>
+          </div>
+        </div>
+      </div>
+      <a href="more-teachers/more-teachers.html" class="teacher-link"
+        ><button class="teacher-btn" title="see more">
+          Trouve ton professeur
+        </button></a
+      >
+    </section>
+
+    <!-- offers section -->
+    <section class="offers" id="offres">
+      <div class="offers-info">
+        <h3>nos offres</h3>
+        <h1>nos offres</h1>
+      </div>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-info">
+            <h1>offre ici</h1>
+            <h2>0000 $</h2>
+            <details>
+              <div class="card-details">
+                total seats: <span class="variable-seats">40</span>
+              </div>
+              <div class="card-details">
+                class: <span class="variable-calss">bem</span>
+              </div>
+              <div class="card-deteils">
+                class time: <span class="variable-time">saturday 8:00</span>
+              </div>
+            </details>
+          </div>
+          <a href="offre-detail/offre-detail.html"
+            ><button class="offers-btn">
+              More details<i
+                class="fa-solid fa-angle-right"
+                style="color: #f2f2f2"
+              ></i></button
+          ></a>
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h1>offre ici</h1>
+            <h2>0000 $</h2>
+            <details>
+              <div class="card-details">
+                total seats: <span class="variable-seats">40</span>
+              </div>
+              <div class="card-details">
+                class: <span class="variable-calss">bem</span>
+              </div>
+              <div class="card-deteils">
+                class time: <span class="variable-time">saturday 8:00</span>
+              </div>
+            </details>
+          </div>
+          <a href="offre-detail/offre-detail.html"
+            ><button class="offers-btn">
+              More details<i
+                class="fa-solid fa-angle-right"
+                style="color: #f2f2f2"
+              ></i></button
+          ></a>
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h1>offre ici</h1>
+            <h2>0000 $</h2>
+            <details>
+              <div class="card-details">
+                total seats: <span class="variable-seats">40</span>
+              </div>
+              <div class="card-details">
+                class: <span class="variable-calss">bem</span>
+              </div>
+              <div class="card-deteils">
+                class time: <span class="variable-time">saturday 8:00</span>
+              </div>
+            </details>
+          </div>
+          <a href="offre-detail/offre-detail.html"
+            ><button class="offers-btn">
+              More details<i
+                class="fa-solid fa-angle-right"
+                style="color: #f2f2f2"
+              ></i></button
+          ></a>
+        </div>
+        <div class="card">
+          <div class="card-info">
+            <h1>offre ici</h1>
+            <h2>0000 $</h2>
+            <details>
+              <div class="card-details">
+                total seats: <span class="variable-seats">40</span>
+              </div>
+              <div class="card-details">
+                class: <span class="variable-calss">bem</span>
+              </div>
+              <div class="card-deteils">
+                class time: <span class="variable-time">saturday 8:00</span>
+              </div>
+            </details>
+          </div>
+          <a href="offre-detail/offre-detail.html"
+            ><button class="offers-btn">
+              More details<i
+                class="fa-solid fa-angle-right"
+                style="color: #f2f2f2"
+              ></i></button
+          ></a>
+        </div>
+
+        <a href="more-offres/more-offres.html"
+          ><button class="offers-more">
+            See more<i
+              class="fa-solid fa-angle-right"
+              style="color: #f2f2f2"
+            ></i>
+          </button>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========= footer section ========= -->
+    <footer id="footer">
+      <div class="in-footer">
+        <div class="get-in-touch">
+          <span>Get in touch</span>
+          <div class="gin">
+            <div class="f"><i class="fa-solid fa-location-dot"></i></div>
+            <div class="g-i-t-m">
+              adress
+              <p>
+                <a
+                  href="https://www.google.com/maps/search/R%C3%A9sidence+%22les+Zianides%22+UV05+Ali+Mendjeli,+A%C3%AFn+Smara,+Algeria/@36.3500829,6.5794113,14z/data=!3m1!4b1?entry=ttu"
+                  >Résidence "les Zianides" UV05 Ali Mendjeli, Aïn Smara,
+                  Algeria</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="gin">
+            <div class="f"><i class="fa-solid fa-phone"></i></div>
+            <div class="g-i-t-m">
+              phone
+              <p>+213 770 44 31 65</p>
+            </div>
+          </div>
+          <div class="gin">
+            <div class="f">
+              <i class="fa-solid fa-envelope"></i>
+            </div>
+            <div class="g-i-t-m">
+              email
+              <p>ecolesdumondeziani@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="media-icons">
+          <a href="https://www.instagram.com/ecolesdumonde/"
+            ><i class="fa-brands fa-instagram"></i
+          ></a>
+          <a
+            href="https://web.facebook.com/profile.php?id=100063770074414&_rdc=1&_rdr"
+            ><i class="fa-brands fa-square-facebook"></i
+          ></a>
+          <a href="https://ecolesdumondeziani@gmail.com"
+            ><i class="fa-solid fa-envelope"></i
+          ></a>
+        </div>
+      </div>
+      <div class="copyright">
+        © <span style="color: 0">Ecoles Du Monde.</span> All Rights
+        Reserved.<span style="color: 1">
+          Made by
+          <span><a href="#footer" title="front-end developer">GHAITHE</a></span>
+          &
+          <span
+            ><a href="#footer" title="back-end developer">SALAH</a></span
+          ></span
+        >
+      </div>
+    </footer>
+
+    <!-- ======= scroll up button ======= -->
+    <a href="#header">
+      <div class="up-btn">
+        <i class="fa fa-angle-double-up"></i>
+      </div>
+    </a>
+    <!--=============== SWIPER JS ===============-->
+    <script src="assets/js/swiper-bundle.min.js"></script>
+    <!--=============== MAIN JS ===============-->
+    <script src="assets/js/main.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
